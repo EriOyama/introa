@@ -1,0 +1,22 @@
+<script>
+
+    
+    /*the user inputs the tweet from the pop up from prompt code 
+if 140- length<o, a message "Your tweet has more than 140 characters." pops up.
+
+*/
+var tweet = prompt("Hi!Let's tweet!");
+    if (tweet.length>140)
+    {
+        confirm("Oops!Your tweet has more than 140 characters.")
+    }
+    if(tweet.length === 0)
+    {
+        confirm("Oops!You haven't entered your tweet.")
+    }
+    else
+    {
+        confirm("That's a great tweet!Enjoy using Twitter!")
+    }
+
+</script>
