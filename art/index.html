@@ -1,0 +1,114 @@
+<html>
+<head></head>
+<body>
+This is the painting!
+    <canvas id="myCanvas" width="265" height="445"></canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var canvasWidth = 265
+    var canvasHeight = 445
+    
+    //background
+    ctx.beginPath();
+    ctx.fillStyle="#CFD7BF";
+    ctx.fillRect(0,0,canvasWidth,canvasHeight);
+    ctx.closePath();
+    ctx.stroke();
+    
+    //white square down left
+    ctx.beginPath();
+    ctx.lineWidth="1"
+    ctx.fillStyle="#C0CAC1";
+    ctx.fillRect(0.05*canvasWidth,0.5*canvasHeight,0.45*canvasWidth,0.3*canvasHeight);
+    ctx.closePath();
+    ctx.stroke();
+    
+    
+    //blue arc in the right bottom
+    ctx.beginPath();
+    ctx.lineWidth="1";
+    ctx.strokeStyle="#132CEB";
+    ctx.arc(0.5*canvasWidth,0.5*canvasHeight,  0.45*canvasWidth,0*Math.PI,0.5*Math.PI);
+    ctx.lineTo(0.5*canvasWidth,0.5*canvasHeight);
+    ctx.closePath();
+    ctx.fillStyle="#132CEB"
+    ctx.fill();
+    ctx.stroke();
+    
+    //orange quarter
+    ctx.beginPath();
+    ctx.strokeStyle="#C94B00";
+    ctx.arc(0.5*canvasWidth,0.5*canvasHeight,  0.32*canvasWidth,0.5*Math.PI,1*Math.PI);
+ctx.lineTo(0.5*canvasWidth,0.5*canvasHeight);
+    ctx.closePath();
+    ctx.fillStyle="#C94B00";
+    ctx.fill();
+    ctx.stroke();
+    
+    //white quarter down right
+    ctx.beginPath();
+    ctx.strokeStyle="#C0CAC1";
+    ctx.lineWidth="1";
+    ctx.arc(0.5*canvasWidth,0.5*canvasHeight,  0.32*canvasWidth,0,0.5*Math.PI);
+    ctx.lineTo(0.5*canvasWidth,0.5*canvasHeight);
+    ctx.closePath();
+    ctx.fillStyle="#C0CAC1";
+    ctx.fill();
+    ctx.stroke();
+    
+    
+    
+     //white quarter up left
+    ctx.beginPath();
+    ctx.lineWidth="1"
+    ctx.strokeStyle="#C0CAC1";
+    ctx.arc(0.5*canvasWidth,0.5*canvasHeight,  0.32*canvasWidth,1*Math.PI,1.5*Math.PI);
+    ctx.lineTo(0.5*canvasWidth,0.5*canvasHeight);
+    ctx.closePath();
+    ctx.fillStyle="#C0CAC1";
+    ctx.fill();
+    ctx.stroke();
+    
+    
+    //yellowarc upright
+    ctx.beginPath();
+    ctx.lineWidth="22";
+    ctx.strokeStyle="#E3DE13";
+    ctx.arc(0.5*canvasWidth,0.5*canvasHeight,  0.28*canvasWidth,1.5*Math.PI,1.8*Math.PI);
+    ctx.stroke();
+   
+    
+      //navy arc up left
+    ctx.beginPath();
+    ctx.lineWidth="35"
+    ctx.strokeStyle="#242B57";
+    ctx.arc(0.5*canvasWidth,0.5*canvasHeight,  0.385*canvasWidth,1*Math.PI,1.63*Math.PI);
+    ctx.stroke();
+  
+    
+    //darkgreenarc downleft
+    ctx.beginPath();
+    ctx.lineWidth="32";
+    ctx.strokeStyle="#213E2C";
+    ctx.arc(0.5*canvasWidth,0.5*canvasHeight,  0.46*canvasWidth,0.5*Math.PI,0.8*Math.PI);
+    ctx.stroke();
+   
+    
+    
+ 
+    
+    //lightgreenarc upright
+     ctx.beginPath();
+    ctx.lineWidth="27"
+    ctx.strokeStyle="#4AAD39";
+    ctx.arc(0.5*canvasWidth,0.5*canvasHeight,  0.44*canvasWidth,1.63*Math.PI,1.8*Math.PI);
+    ctx.stroke();
+    
+   
+   
+    
+   
+   
+</script>
+</body>
